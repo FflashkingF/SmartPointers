@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Test all",
+      "setup": "wget https://apt.llvm.org/llvm.sh && chmod +x llvm.sh && sudo ./llvm.sh 16 && sudo apt-get -qq install valgrind clang-format-16 clang-tidy-16 && sudo ln -sf $(which clang++-16) /usr/bin/clang++ && sudo ln -sf $(which clang-format-16) /usr/bin/clang-format && sudo ln -sf $(which clang-tidy-16) /usr/bin/clang-tidy",
+      "run": "make test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 100
+    }
+  ]
+}
