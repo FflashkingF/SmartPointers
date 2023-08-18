@@ -284,7 +284,7 @@ void operator delete(void* ptr, VerySpecialType /*unused*/) {
 }
 
 // to prevent compiler warnings
-void operator delete(void* ptr, size_t /*unused*/) {
+void operator delete(void* ptr, size_t /*unused*/) noexcept {
     ++delete_called;
     std::free(ptr);
 }

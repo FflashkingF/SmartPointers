@@ -13,7 +13,7 @@ info:
 	clang++ --version
 	clang-tidy --version
 	clang-format --version
-	valgrind --version
+#	valgrind --version
 
 run: build
 	@echo 'Run tests (simple)'
