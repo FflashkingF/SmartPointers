@@ -1,2 +1,2 @@
 # SmartPointers
-# SharedPtr and WeakPtr
+SharedPtr and WeakPtr
